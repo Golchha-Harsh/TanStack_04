@@ -1,0 +1,39 @@
+.login-container {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: 24A0ED;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  .login-button-container {
+    display: block; /* Make it a block-level element */
+    text-align: center; /* Center the button's text */
+  }
+  button {
+    width: 60%;
+    padding: 12px 20px; /* Adjust padding for better look */
+    background-color: #1877F2; /* Facebook blue, a common login button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Slightly larger border radius */
+    cursor: pointer;
+    margin: 15px auto; /* Add some margin for spacing */
+    display: block;
+    font-size: 16px; /* Adjust font size */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition */
+  }
+  
+  button:hover {
+    background-color: #1665D8; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  

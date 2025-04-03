@@ -1,0 +1,19 @@
+.form-group {
+    margin-bottom: 15px;
+    text-align: center; /* Center the entire form-group */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Center the label */
+  }
+  
+  .form-group input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 auto; /* Center the input */
+    display: block;
+  }
