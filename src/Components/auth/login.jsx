@@ -26,7 +26,7 @@ function LoginPage() {
       console.log('Token received:', response.data.accessToken);
       //Into local storage storing token = my access token that I have received sometimes we also store them inside session storage or in cookies as ritik sir told us in session
       localStorage.setItem('token', response.data.accessToken);
-      console.log('Token stored in localStorage:', localStorage.getItem('token')); //This line basically I am debugging if My token is stored into local storage or not
+      console.log('Token stored in localStorage:', localStorage.getItem('token')); //This line basically I am debugging if My token is stored into local storage or not  if it stored it will display and i dont have to check local storage
       //Then after successfully storing and login navigating user to dashboard endpoint
       navigate('/dashboard');
     } catch (err) {

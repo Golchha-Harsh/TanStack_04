@@ -13,7 +13,9 @@ export const useCreateUser = () => {
   return useMutation({
     mutationFn: createUser,
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['users'] }); //This line tells tanStack qery that the data associated with the ['users'] query key (which is used by useUsers to fetch the list of users) is now outdated. This will trigger a background refetch of the user data the next time a component using
+      queryClient.invalidateQueries({ queryKey: ['users'] }); //This line tells tanStack qery that the data associated with the ['users'] query key
+      //  (which is used by useUsers to fetch the list of users) is now outdated
+      // This will trigger a background refetch of the user data the next time a component using
     },
     onError: (error) => {
       console.error('Error creating user: ', error);//if mutation fun fails then this error
